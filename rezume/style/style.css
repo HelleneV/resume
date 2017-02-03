@@ -1,0 +1,111 @@
+*{
+	box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	background-color: #190B00;
+
+}
+
+header{
+	width: 90%;
+	max-width: 1024px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 35px;
+	background-color: #fff;
+}
+.img{
+	/*text-align: center;*/
+}
+
+header img{
+	border: 10px solid #190B00;
+	/*margin: 0 15px;*/
+}
+
+h1{
+	color: #190B00;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+h2{
+	color: #190B00;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+main{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 35px;
+	background-color: #fff;
+	margin-bottom: 10px;
+
+}
+hr.top{
+	color: #190B00;
+	size: 2px;
+}
+p{
+	padding-bottom: 10px;
+}
+p span{
+	font-weight: bold;
+}
+.curs{}
+
+@media screen and  (max-width: 1023px) {
+	header img{
+		width: 90px;
+	}
+}
+
+@media screen and  (max-width: 767px) {
+	[class*="col-"] {
+    	float: left;
+    	padding-bottom: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+/* For mobile phones: */
+[class*="col-"] {   
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
